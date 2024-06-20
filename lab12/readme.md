@@ -1,0 +1,16 @@
+# Lab 12: Working with Nested Lists to Create and Manipulate Two-Dimensional Data Structures
+
+## Tasks:
+
+| Task Number | Description | Example Input | Expected Output |
+|-------------|-------------|---------------|-----------------|
+| \#1 | Create a Matrix class that initializes a two-dimensional list with zeros. | `matrix = Matrix(2, 3)`<br>`print(matrix.data)` | `[[0, 0, 0], [0, 0, 0]]` |
+| \#2 | Extend the Matrix class by adding a method `add_element` that adds an element at a specific position (row, column). | `matrix = Matrix(2, 3)`<br>`matrix.add_element(1, 2, 10)`<br>`print(matrix.data)` | `[[0, 0, 0], [0, 0, 10]]` |
+| \#3 | Add a method `sum_of_rows` to the Matrix class that returns a list of sums of each row in the matrix. | `matrix = Matrix(2, 3)`<br>`matrix.add_element(0, 0, 5)`<br>`matrix.add_element(0, 1, 10)`<br>`matrix.add_element(1, 2, 20)`<br>`print(matrix.sum_of_rows())` | `[15, 20]` |
+| \#4 | Create a method `transpose` in the Matrix class that returns a new Matrix object, which is the transpose of the original matrix. | `matrix = Matrix(2, 3)`<br>`matrix.add_element(0, 1, 1)`<br>`matrix.add_element(1, 2, 2)`<br>`transposed = matrix.transpose()`<br>`print(transposed.data)` | `[[0, 0], [1, 0], [0, 2]]` |
+| \#5 | Implement a method `multiply_by` in the Matrix class that accepts another Matrix object and returns a new Matrix object that is the result of the multiplication of the two matrices. | `matrix1 = Matrix(2, 3)`<br>`matrix1.add_element(0, 0, 1)`<br>`matrix1.add_element(0, 1, 2)`<br>`matrix1.add_element(0, 2, 3)`<br>`matrix2 = Matrix(3, 2)`<br>`matrix2.add_element(0, 0, 1)`<br>`matrix2.add_element(1, 0, 2)`<br>`matrix2.add_element(2, 0, 3)`<br>`result = matrix1.multiply_by(matrix2)`<br>`print(result.data)` | `[[14, 0], [0, 0]]` |
+| \#6 | Add a method `is_symmetric` to the Matrix class that checks if the matrix is symmetric (i.e., the matrix is equal to its transpose). | `matrix = Matrix(2, 2)`<br>`matrix.add_element(0, 1, 5)`<br>`matrix.add_element(1, 0, 5)`<br>`print(matrix.is_symmetric())` | `True` |
+| \#7 | Implement a method `rotate_right` in the Matrix class that rotates the matrix 90 degrees to the right. | `matrix = Matrix(2, 2)`<br>`matrix.add_element(0, 0, 1)`<br>`matrix.add_element(0, 1, 2)`<br>`matrix.add_element(1, 0, 3)`<br>`matrix.add_element(1, 1, 4)`<br>`matrix.rotate_right()`<br>`print(matrix.data)` | `[[3, 1], [4, 2]]` |
+| \#8 | Create a method `flatten` in the Matrix class that returns a single list containing all elements of the matrix. | `matrix = Matrix(2, 2)`<br>`matrix.add_element(0, 0, 1)`<br>`matrix.add_element(0, 1, 2)`<br>`matrix.add_element(1, 0, 3)`<br>`matrix.add_element(1, 1, 4)`<br>`print(matrix.flatten())` | `[1, 2, 3, 4]` |
+| \#9 | Add a static method `from_list` to the Matrix class that creates a matrix object from a given list of lists. | `list_of_lists = [[1, 2], [3, 4]]`<br>`matrix = Matrix.from_list(list_of_lists)`<br>`print(matrix.data)` | `[[1, 2], [3, 4]]` |
+| \#10 | Create a method `diagonal` in the Matrix class that extracts the diagonal of a square matrix as a list. | `matrix = Matrix(3, 3)`<br>`matrix.add_element(0, 0, 1)`<br>`matrix.add_element(1, 1, 2)`<br>`matrix.add_element(2, 2, 3)`<br>`print(matrix.diagonal())` | `[1, 2, 3]` |
