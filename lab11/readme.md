@@ -1,4 +1,4 @@
-## Lab 11: Advanced Working with Arrays of Numbers in Python
+# Lab 11: Advanced Working with Arrays of Numbers in Python
 
 | Task Number | Description | Example Input | Expected Output |
 |-------------|-------------|---------------|-----------------|
