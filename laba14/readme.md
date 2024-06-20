@@ -1,4 +1,4 @@
-# Boolean Expressions and Conditional Statements
+# Laba 14: Boolean Expressions and Conditional Statements
 
 ## Tasks:
 
