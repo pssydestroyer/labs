@@ -1,3 +1,5 @@
+## Lab 10: Advanced Working with Arrays of Numbers in Python
+
 | Task Number | Description | Example Input | Expected Output |
 |-------------|-------------|---------------|-----------------|
 | \#1 | Create a function `sum_of_squares` that accepts an array of numbers and returns the sum of the squares of each number. | `print(sum_of_squares([1, 2, 3]))` | 14 |
